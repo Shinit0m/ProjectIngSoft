@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main">
+		<button mat-mini-fab mat-dialog-close style="width: auto;">
+			<mat-icon>cancel</mat-icon>
+		  </button>  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+			<div class="buscar">
+				<form>
+					<label for="chk" aria-hidden="true">Buscar por Nombre</label>
+					<input type="text" name="txt" placeholder="name" required="" [(ngModel)]="BuscarDoctor.name">
+					<button (click)="onSearchName()">Buscar</button>
+				</form>
+			</div>
+	</div>
+</body>
+</html>

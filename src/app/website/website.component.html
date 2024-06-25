@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="text-align: center;">
+            <img src="https://i.pinimg.com/originals/26/47/42/264742734f4f57985a8f29c57183d94c.png" class="img-fluid">
+        </div>
+        <div class="carousel-item" style="text-align: center;">
+            <img src="https://png.pngtree.com/png-clipart/20230807/original/pngtree-cartoon-medical-staff-in-hospital-with-surgeon-nurse-and-therapist-vector-picture-image_10061938.png" class="img-fluid">
+        </div>
+        <div class="carousel-item" style="text-align: center;">
+            <img src="https://previews.123rf.com/images/bitontawan02/bitontawan021802/bitontawan02180200015/94583495-equipo-m%C3%A9dico-y-personal-personaje-de-dibujos-animados-de-ilustraci%C3%B3n-vectorial.jpg" class="img-fluid">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+<div class="container text-center">
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-outline-info" (click)="reservarHora()">Reservar Hora</button>
+        <button type="button" class="btn btn-outline-danger" (click)="cancelarHora()">Cancelar Hora</button>
+        <button type="button" class="btn btn-outline-dark" routerLinkActive="active" routerLink="examenes">Resultados Examenes</button>
+        <button type="button" class="btn btn-outline-dark" routerLinkActive="active" routerLink="recetas">Ver Recetas Medicas</button>
+      </div>
+    </div>

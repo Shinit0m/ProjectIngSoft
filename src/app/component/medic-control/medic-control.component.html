@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 mt-3">
+            <mat-card class="add-doc text-center" (click)="GenRec()">
+                <mat-card-content>
+                    Generar Recetas <br>
+                    <mat-icon>add_circle</mat-icon>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="col-sm-6 col-md-4 mt-3">
+            <mat-card class="ver-hor text-center" routerLinkActive="active" routerLink="horario">
+                <mat-card-content>
+                    Ver Horario del dia<br>
+                    <mat-icon>today</mat-icon>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="col-sm-6 col-md-4 mt-3">
+            <mat-card class="ver-box text-center" (click)="uploadExamen()">
+                <mat-card-content>
+                    Subir Examenes<br>
+                    <mat-icon>upload_file</mat-icon>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>

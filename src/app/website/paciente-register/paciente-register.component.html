@@ -1,0 +1,46 @@
+<div class="container-fluid px-1 py-5 mx-auto">
+    <div class="row d-flex justify-content-center">
+        <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+            <div class="card">
+                <button type="button" class="btn-close" mat-dialog-close style="margin-left: 210px;"></button>
+                <h5 class="text-center mb-4">Ingresa tus datos para contactarte</h5>
+                <form class="form-card" onsubmit="event.preventDefault()">
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Nombre<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Enter your first name" onblur="validate(1)" [(ngModel)]="addObj.nombre"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Apellido<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname" placeholder="Enter your last name" onblur="validate(2)" [(ngModel)]="addObj.apellido"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Email<span class="text-danger"> *</span></label> <input type="text" id="email" name="email" placeholder="" onblur="validate(3)" [(ngModel)]="addObj.email"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Telefono<span class="text-danger"> *</span></label> <input type="text" id="mob" name="mob" placeholder="" onblur="validate(4)" [(ngModel)]="addObj.telefono"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Edad<span class="text-danger"> *</span></label> <input type="text" id="edad" name="edad" placeholder="" onblur="validate(5)" [(ngModel)]="addObj.edad"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Rut<span class="text-danger"> *</span></label> <input type="text" id="rut" name="rut" placeholder="" onblur="validate(6)"[(ngModel)]="addObj.rut"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-12 flex-column d-flex">
+                            <mat-form-field>
+                                <mat-label>Hora Disponible</mat-label>
+                                <select matNativeControl required [(ngModel)]="addObj.hora">
+                                    <option value="hora1">6:30 - 7:00</option>
+                                    <option value="hora2">7:50 - 8:20</option>
+                                    <option value="hora3">9:50 - 10:20</option>
+                                    <option value="hora4">10:30 - 11:00</option>
+                                    <option value="hora5">11:50 - 12:20</option>
+                                    <option value="hora6">13:50 - 14:20</option>
+                                    <option value="hora7">14:30 - 15:00</option>
+                                    <option value="hora8">15:50 - 16:20</option>
+                                    <option value="hora9">17:50 - 18:20</option>
+                                    <option value="hora10">18:30 - 19:00</option>
+                                </select>
+                              </mat-form-field>
+                    </div>
+                </div>
+                    <div class="row justify-content-end">
+                        <div class="form-group col-sm-6"> <button type="submit" mat-dialog-close class="btn-block btn-primary" (click)="onRegister()">Registrarse</button> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

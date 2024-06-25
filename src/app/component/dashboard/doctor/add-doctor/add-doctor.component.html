@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main">
+		<input type="checkbox" id="chk" aria-hidden="true">
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Registrar Doctor</label>
+					<input type="text" name="text" placeholder="Nombre" required="" [(ngModel)]="addObj.nombre">
+					<input type="text" name="text" placeholder="Apellido" required="" [(ngModel)]="addObj.apellido">
+					<input type="number" name="text" placeholder="Edad" required="" [(ngModel)]="addObj.edad">
+                    <input type="text" name="text" placeholder="Especialidad" required="" [(ngModel)]="addObj.especialidad">
+                    <input type="number" name="text" placeholder="Box" required="" [(ngModel)]="addObj.box">
+					<button (click)="onAddDoctor()" mat-dialog-close>Registrar</button>
+				</form>
+			</div>
+	</div>
+</body>
+</html>

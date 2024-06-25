@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+<div class="container py-5">
+    <div class="row mb-5">
+      <div class="col-lg-8 text-black py-4 text-center mx-auto">
+        <h1 class="display-4">Reserva tu Hora</h1>
+        <p class="lead display-5 mb-0">Importante:</p>
+        <p class="lead">El día de su cita debe presentar su cédula de identidad, pasaporte y en el caso de menores de 1 año, certificado de nacimiento.</p>
+        <p class="lead">Se debe llegar 15 minutos antes a su hora médica.</p>
+      </div>
+    </div>
+  
+    <mat-tab-group>
+        <mat-tab label="Búsqueda por especialidad"> 
+            <p class="leade font-italic mb-0">Prevision</p>
+          <select class="form-select form-select-sm" aria-label="Small select example">
+            <option selected>Open this select menu</option>
+            <option value="1">Afp</option>
+            <option value="2">Fonasa</option>
+          </select>
+          <p class="leade font-italic mb-0">Especialidad</p>
+          <select class="form-select form-select-sm" aria-label="Small select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+            <div class="col">
+                <button class="btn btn-purple-moon" (click)="registerPac()">Buscar Hora</button>
+            </div> 
+        </mat-tab>
+
+        <mat-tab label="Búsqueda por médico"> 
+            <p class="leade font-italic mb-0">Prevision</p>
+            <select class="form-select form-select-sm" aria-label="Small select example">
+              <option selected>Open this select menu</option>
+              <option value="1">Afp</option>
+              <option value="2">Fonasa</option>
+            </select>
+            <p class="leade font-italic mb-0">Apellido Medico</p>
+            <input class="form-control" type="text" placeholder="Nombre o Apellido" >
+            <div class="col">
+                <button class="btn btn-purple-moon" (click)="registerPac()">Buscar Hora</button>
+            </div> 
+        </mat-tab>
+      </mat-tab-group>
+    </div>
